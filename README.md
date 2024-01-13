@@ -48,6 +48,6 @@ Contributions are welcome! If you have ideas for new accessories, improvements t
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the CC0 1.0 Universal License. See the [LICENSE](LICENSE) file for more details.
 
 Have fun creating penguin profile pictures on the web! 🎉
