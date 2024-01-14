@@ -186,7 +186,7 @@ width: 100%;
 
 position: absolute;
 
-background-image: radial-gradient(white, orange);
+background-image: radial-gradient(white, transparent);
 }
 
 .menu_wrapper{
@@ -228,4 +228,135 @@ background-image: radial-gradient(white, orange);
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
+}
+
+.starburst {
+	/* GLOBAL */
+	width: 300%;
+	height: 300%;
+	top: -100%;
+	left: -100%;
+	position: absolute;
+	background-repeat: no-repeat;
+	z-index: 0;
+	--color-1: rgb(230, 154, 40);
+	--color-2: rgb(245, 192, 113);
+}
+.starburst * {
+	/* CHILDREN */
+	position: relative;
+	z-index: 1;
+}
+.starburst--both {
+	/* ALIGNMENT BOTH */
+
+	overflow: hidden;
+	background-image:
+	linear-gradient(0deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(11deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(22deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(33deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(44deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(55deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(66deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(77deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(88deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(99deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(110deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(121deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(132deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(143deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(154deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(165deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(176deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(187deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(198deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(209deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(220deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(231deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(242deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(253deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(264deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(275deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(286deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(297deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(308deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(319deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(330deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(341deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(352deg, transparent 50%, var(--color-1) 50%);
+}
+.starburst--both::before {
+	background-image:
+	linear-gradient(180deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(191deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(202deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(213deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(224deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(235deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(246deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(257deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(268deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(279deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(290deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(301deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(312deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(323deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(334deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(345deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(356deg, transparent 50%, var(--color-1) 50%);
+}
+.starburst--both::after {
+	top: 50% !important;
+	background-position: 0 100%;
+	background-size: 100% 200%;
+	background-image:
+	linear-gradient(0deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(11deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(22deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(33deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(44deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(55deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(66deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(77deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(88deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(99deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(110deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(121deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(132deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(143deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(154deg, transparent 50%, var(--color-1) 50%),
+	linear-gradient(165deg, transparent 50%, var(--color-2) 50%),
+	linear-gradient(176deg, transparent 50%, var(--color-1) 50%);
+}
+.starburst--both::before,
+.starburst--both::after {
+	top: 0;
+	left: 0;
+	content: "";
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  animation: rotating 60s linear infinite;
 }
