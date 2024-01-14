@@ -1,6 +1,11 @@
 "use client";
 
-import Image from 'next/image'
+import Image from 'next/image';
+
+import React from "react";
+import {Button, ButtonGroup} from "@nextui-org/react";
+import {HeartIcon} from './components/HeartIcon';
+import {CameraIcon} from './components/CameraIcon';
 
 export default function Home() {
   return (
@@ -29,6 +34,51 @@ export default function Home() {
       </div>
 
       <Image alt="Peiko" className="PenguinElement" src="/img/PenguinElement.png"   width={400} height={600}/>
+
+      <div className="menu_wrapper">
+        <ButtonGroup className="pages" >
+          <Button>One</Button>
+          <Button>Two</Button>
+          <Button>Three</Button>
+        </ButtonGroup>
+
+        <div className="acc_options"> 
+          <Button isIconOnly color="danger" aria-label="Like">
+            <HeartIcon />
+          </Button>
+          
+          <Button isIconOnly color="warning" aria-label="Like">
+            <CameraIcon />
+          </Button>
+
+          <Button isIconOnly color="danger" aria-label="Like">
+            <HeartIcon />
+          </Button>
+
+          <Button isIconOnly color="warning" aria-label="Like">
+            <CameraIcon />
+          </Button>
+
+          <Button isIconOnly color="danger" aria-label="Like">
+            <HeartIcon />
+          </Button>
+
+          <Button isIconOnly color="warning" aria-label="Like">
+            <CameraIcon />
+          </Button>
+
+          <Button isIconOnly color="danger" aria-label="Like">
+            <HeartIcon />
+          </Button>
+
+          <Button isIconOnly color="warning" aria-label="Like">
+            <CameraIcon />
+          </Button>
+        </div>
+
+      </div>
+
+
 
 {/*
       <Image 
